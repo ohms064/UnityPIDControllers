@@ -1,0 +1,14 @@
+{
+  "name": "com.ohms.controllers",
+  "displayName": "PID Controllers",
+  "version": "1.0.0",
+  "unity": "2020.1",
+  "description": "Timers with events.",
+  "keywords": [
+    "ohms",
+    "utilities",
+    "controllers"
+  ],
+  "category": "utilities",
+  "dependencies": {}
+}
