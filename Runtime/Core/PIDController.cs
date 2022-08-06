@@ -11,9 +11,15 @@ namespace OhmsLibraries.Controllers {
 #if ODIN_INSPECTOR
         [HorizontalGroup ("PID", LabelWidth = 15), LabelText ("P")]
 #endif
-        public float pCoeff = .8f,
-        iCoeff = .0002f,
-        dCoeff = .2f;
+        public float pCoeff = .8f;
+#if ODIN_INSPECTOR
+        [HorizontalGroup ("PID", LabelWidth = 15), LabelText ("I")]
+#endif        
+        public float iCoeff = .0002f;
+#if ODIN_INSPECTOR
+        [HorizontalGroup ("PID", LabelWidth = 15), LabelText ("D")]
+#endif        
+        public float dCoeff = .2f;
 
         //Variables to store values between calculations
         protected T integral;
